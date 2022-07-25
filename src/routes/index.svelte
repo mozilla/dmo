@@ -2,4 +2,7 @@
 	<title>Data@Mozilla</title>
 </svelte:head>
 
-<h1>Welcome to Data@Mozilla</h1>
+<h4>Data Org Landing Page</h4>
+
+<style lang="scss">
+</style>
