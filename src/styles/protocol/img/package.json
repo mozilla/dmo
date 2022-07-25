@@ -1,0 +1,22 @@
+{
+  "name": "@mozilla-protocol/assets",
+  "version": "5.1.0",
+  "description": "Files for Mozilla's logos, icons, and other images",
+  "main": "icons/protocol-icons.scss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mozilla/protocol-assets.git"
+  },
+  "keywords": [
+    "mozilla",
+    "firefox",
+    "assets",
+    "svg"
+  ],
+  "author": "Mozilla",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/mozilla/protocol-assets/issues"
+  },
+  "homepage": "https://github.com/mozilla/protocol-assets#readme"
+}
