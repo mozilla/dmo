@@ -26,7 +26,6 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end;
-
 	}
 
 	.mzp-c-navigation-logo a {
