@@ -1,0 +1,57 @@
+[
+  {
+    "name": "content-xs",
+    "value": "304px",
+    "token": "$content-xs"
+  },
+  {
+    "name": "content-sm",
+    "value": "432px",
+    "token": "$content-sm"
+  },
+  {
+    "name": "content-md",
+    "value": "688px",
+    "token": "$content-md"
+  },
+  {
+    "name": "content-lg",
+    "value": "928px",
+    "token": "$content-lg"
+  },
+  {
+    "name": "content-xl",
+    "value": "1152px",
+    "token": "$content-xl"
+  },
+  {
+    "name": "content-max",
+    "value": "1440px",
+    "token": "$content-max"
+  },
+  {
+    "name": "screen-xs",
+    "value": "320px",
+    "token": "$screen-xs"
+  },
+  {
+    "name": "screen-sm",
+    "value": "480px",
+    "token": "$screen-sm"
+  },
+  {
+    "name": "screen-md",
+    "value": "768px",
+    "token": "$screen-md"
+  },
+  {
+    "name": "screen-lg",
+    "value": "1024px",
+    "token": "$screen-lg"
+  },
+  {
+    "name": "screen-xl",
+    "value": "1312px",
+    "token": "$screen-xl"
+  }
+]

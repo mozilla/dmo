@@ -1,0 +1,31 @@
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+@import '../../includes/lib';
+
+
+// Theme classes for background colors
+
+.mzp-t-background-secondary {
+    background-color: get-theme('background-color-secondary');
+}
+
+.mzp-t-background-tertiary {
+    background-color: get-theme('background-color-tertiary');
+}
+
+.mzp-t-dark {
+    background-color: get-theme('background-color-inverse');
+    color: get-theme('body-text-color-inverse');
+}
+
+.mzp-t-dark.mzp-t-background-secondary,
+.mzp-t-dark .mzp-t-background-secondary {
+    background-color: get-theme('background-color-secondary-inverse');
+}
+
+.mzp-t-dark.mzp-t-background-tertiary,
+.mzp-t-dark .mzp-t-background-tertiary {
+    background-color: get-theme('background-color-tertiary-inverse');
+}
