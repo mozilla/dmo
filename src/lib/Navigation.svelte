@@ -1,7 +1,9 @@
 <script>
+	import NavDropdownMenu from '../lib/NavDropdownMenu.svelte';
+	import { navigations } from './data/navigation';
 </script>
 
-<div class="mzp-c-navigation mzp-is-sticky mzp-has-sticky-navigation">
+<div class="mzp-c-navigation">
 	<div class="mzp-c-navigation-l-content">
 		<div class="mzp-c-navigation-container">
 			<button class="mzp-c-navigation-menu-button" type="button" aria-controls="navigation-demo"
@@ -10,6 +12,30 @@
 			<div class="mzp-c-navigation-logo">
 				<a href="/">data@mozilla</a>
 			</div>
+			<nav class="mzp-c-menu mzp-is-basic">
+				<ul class="mzp-c-menu-category-list">
+					{#each navigations as navigation}
+						<li class="mzp-c-menu-category mzp-has-drop-down mzp-js-expandable">
+							<a class="mzp-c-menu-title disabled" href="/#" aria-haspopup="true"
+								>{navigation.name}</a
+							>
+							{#if navigation.items && navigation.items.length}
+								<div class="mzp-c-menu-panel mzp-c-emphasis-box">
+									<div class="mzp-c-menu-panel-container">
+										<div class="mzp-c-menu-panel-content">
+											<ul>
+												<li>
+													<NavDropdownMenu items={navigation.items} />
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							{/if}
+						</li>
+					{/each}
+				</ul>
+			</nav>
 		</div>
 	</div>
 </div>
@@ -38,9 +64,5 @@
 	.disabled {
 		pointer-events: none;
 		cursor: default;
-	}
-	.mzp-c-menu-panel {
-		width: 100%;
-		margin: 2px 1px 2px 30%;
 	}
 </style>
