@@ -31,10 +31,10 @@
 	<div>
 		<h4 class="split-title mzp-has-zap-1"><strong>Company</strong></h4>
 		<br />
-		<div class="mzp-l-content mzp-l-card mzp-c-emphasis-box">
+		<div class="mzp-l-content mzp-l-card">
 			{#each kpis as product}
 				<section class="mzp-c-card">
-					<a class="mzp-c-card-block-link" href="/products/{product.url}">
+					<a class="mzp-c-card-block-link" href={product.url}>
 						<div class="mzp-c-card-media-wrapper">
 							<img class="mzp-c-card-image" src="/dashboard.svg" alt="product logo" />
 						</div>
@@ -49,7 +49,7 @@
 	<div>
 		<h4 class="split-title mzp-has-zap-1"><strong>Products</strong></h4>
 		<br />
-		<div class="mzp-l-content mzp-l-card mzp-c-emphasis-box">
+		<div class="mzp-l-content mzp-l-card">
 			{#each products as product}
 				<section class="mzp-c-card">
 					<a class="mzp-c-card-block-link" href="/products/{product.app_id}">
@@ -72,7 +72,6 @@
 	@import './src/styles/protocol/css/components/_zap.scss';
 	@import './src/styles/protocol/css/components/_emphasis-box.scss';
 	@import './src/styles/protocol/css/components/_call-out.scss';
-	// @import './src/styles/protocol/css/components/_split.scss';
 	@import './src/styles/protocol/css/components/_card.scss';
 	@import './src/styles/protocol/css/templates/_card-layout.scss';
 	@import './src/styles/protocol/css/templates/_multi-column.scss';

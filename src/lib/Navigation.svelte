@@ -16,19 +16,22 @@
 				<ul class="mzp-c-menu-category-list">
 					{#each navigations as navigation}
 						<li class="mzp-c-menu-category mzp-has-drop-down mzp-js-expandable">
-							<a class="mzp-c-menu-title disabled" href="/#" aria-haspopup="true"
-								>{navigation.name}</a
-							>
+							<a class="mzp-c-menu-title" href="/#" aria-haspopup="true">{navigation.name}</a>
 							{#if navigation.items && navigation.items.length}
 								<div class="mzp-c-menu-panel mzp-c-emphasis-box">
-									<div class="mzp-c-menu-panel-container">
-										<div class="mzp-c-menu-panel-content">
-											<ul>
-												<li>
-													<NavDropdownMenu items={navigation.items} />
-												</li>
-											</ul>
-										</div>
+									<button
+										class="mzp-c-menu-button-close"
+										type="button"
+										aria-controls="mzp-c-menu-panel-example"
+									>
+										Close menu
+									</button>
+									<div class="mzp-c-menu-panel-content">
+										<ul>
+											<li>
+												<NavDropdownMenu items={navigation.items} />
+											</li>
+										</ul>
 									</div>
 								</div>
 							{/if}
@@ -58,11 +61,11 @@
 		background-image: url('../styles/protocol/img/logos/mozilla/data-org.svg');
 		background-repeat: no-repeat;
 		display: block;
-		width: 180px;
 		background-size: contain;
 	}
-	.disabled {
-		pointer-events: none;
-		cursor: default;
+
+	.mzp-c-menu-panel {
+		margin-left: 42vw;
+		width: 56%;
 	}
 </style>

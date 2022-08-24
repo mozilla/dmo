@@ -1,10 +1,13 @@
 <script>
+	import Logo from './Logo.svelte';
+
 	export let items;
 </script>
 
 <section class="mzp-c-menu-item">
 	{#each items as item}
 		<a href={item.url} class="mzp-c-menu-item-head">
+			<Logo product={item.name} />
 			<a href={item.url} class="mzp-c-menu-item-title">{item.name}</a>
 			<p class="mzp-c-menu-item-desc">
 				{#if item.description}
@@ -24,19 +27,18 @@
 		color: #000000;
 		font-weight: bold;
 		margin: 0 0 0.5em;
-		font-size: 10px;
+		font-size: 8px;
 		line-height: 1.08;
 		text-decoration: none;
 	}
 	.mzp-c-menu-item-desc {
-		font-size: 4px;
+		font-size: 2px;
 		color: $color-marketing-gray-70;
 	}
 	.mzp-c-menu-item-head {
 		display: block;
 		text-decoration: none;
 		width: 45%;
-		padding: 5px;
 		&:hover {
 			border-radius: $border-radius-md;
 			box-shadow: $box-shadow-sm;
@@ -45,9 +47,8 @@
 	}
 	.mzp-c-menu-item {
 		display: flex;
-		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: flex-end;
 		width: 200%;
 		&:hover {
 			box-shadow: none;
