@@ -6,9 +6,6 @@
 <div class="mzp-c-navigation">
 	<div class="mzp-c-navigation-l-content">
 		<div class="mzp-c-navigation-container">
-			<button class="mzp-c-navigation-menu-button" type="button" aria-controls="navigation-demo"
-				>Menu</button
-			>
 			<div class="mzp-c-navigation-logo">
 				<a href="/">data@mozilla</a>
 			</div>

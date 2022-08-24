@@ -23,7 +23,7 @@
 		</div>
 	</div>
 	<div class="mzp-c-hero-image">
-		<img src="/hero.jpg" alt="" />
+		<img src="/hero.jpg" alt="Hero image" />
 	</div>
 </section>
 
