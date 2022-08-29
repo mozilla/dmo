@@ -9,32 +9,22 @@ export const navigations = [
 			},
 			{
 				name: 'Glean Aggregated Metrics Dashboard (GLAM)',
-				url: 'glam.telemetry.mozilla.org',
+				url: '//glam.telemetry.mozilla.org',
 				description: `An interactive dashboard that examines the distributions of values of specific individual telemetry metrics, over various dimensions.`
 			},
 			{
-				name: 'Experimenter',
-				url: 'https://experimenter.services.mozilla.com/?ordering=-latest_change&search=&status=Complete&firefox_channel=&firefox_version=&owner=&analysis_owner=&experiment_date_field=&date_range_after=&date_range_before=',
-				description: `The central resource for A/B experiments and feature rollouts in Firefox Mobile and Desktop`
-			},
-			{
 				name: 'sql.telemetry.mozilla.org (STMO)',
-				url: 'sql.telemetry.mozilla.org',
+				url: '//sql.telemetry.mozilla.org',
 				description: `Mozilla instance of Redash that allows for SQL-based exploratory analysis and visualization / dashboard construction.`
 			},
 			{
 				name: 'Nimbus',
-				url: 'https://experimenter.services.mozilla.com/nimbus/?tab=completed',
+				url: 'https://experimenter.info/',
 				description: `Firefox's cross-platform experimentation tool.`
 			},
 			{
-				name: 'Growth and Usage Dashboard (GUD)',
-				url: 'https://gud.telemetry.mozilla.org/',
-				description: `A tool to visualize growth metrics in a standard way across Mozilla’s products.`
-			},
-			{
 				name: 'Glean Dictionary',
-				url: 'dictionary.telemetry.mozilla.org',
+				url: '//dictionary.telemetry.mozilla.org',
 				description: `A web-based tool that allows you to look up information on all the metrics defined in applications built using Glean, Mozilla's next-generation Telemetry SDK.`
 			},
 			{
@@ -54,7 +44,7 @@ export const navigations = [
 			},
 			{
 				name: 'Telemetry Docs',
-				url: 'https://mozilla.github.io/glean/book/index.html',
+				url: 'https://firefox-source-docs.mozilla.org/',
 				description: 'Firefox Source Documentations'
 			},
 			{

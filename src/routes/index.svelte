@@ -6,30 +6,9 @@
 	<title>Data@Mozilla</title>
 </svelte:head>
 
-<section class="mzp-c-hero mzp-has-image">
-	<div class="mzp-l-content ">
-		<div class="mzp-c-hero-body">
-			<h3 class="mzp-has-zap-1 mzp-c-hero-title">Data@Mozilla</h3>
-			<div class="mzp-c-hero-desc">
-				<p>
-					Building a sustainable, global and independent Mozilla that ethically leverages data for
-					the common good.
-				</p>
-			</div>
-
-			<p class="mzp-c-hero-cta">
-				<a class="mzp-c-button" href="https://blog.mozilla.org/data/">Read Our Blog</a>
-			</p>
-		</div>
-	</div>
-	<div class="mzp-c-hero-image">
-		<img src="/hero.jpg" alt="Hero image" />
-	</div>
-</section>
-
 <div class="mzp-l-content mzp-l-columns mzp-t-columns-two ">
 	<div>
-		<h4 class="split-title mzp-has-zap-1"><strong>Company</strong></h4>
+		<h3 class="split-title mzp-has-zap-1"><strong>Company</strong></h3>
 		<br />
 		<div class="mzp-l-content mzp-l-card">
 			{#each kpis as product}
@@ -47,7 +26,7 @@
 		</div>
 	</div>
 	<div>
-		<h4 class="split-title mzp-has-zap-1"><strong>Products</strong></h4>
+		<h3 class="split-title mzp-has-zap-1"><strong>Products</strong></h3>
 		<br />
 		<div class="mzp-l-content mzp-l-card">
 			{#each products as product}
@@ -67,8 +46,6 @@
 </div>
 
 <style lang="scss">
-	@import './src/styles/protocol/css/components/_hero.scss';
-	@import './src/styles/protocol/css/components/_button.scss';
 	@import './src/styles/protocol/css/components/_zap.scss';
 	@import './src/styles/protocol/css/components/_emphasis-box.scss';
 	@import './src/styles/protocol/css/components/_call-out.scss';
