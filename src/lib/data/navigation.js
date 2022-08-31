@@ -3,11 +3,6 @@ export const navigations = [
 		name: 'Tools',
 		items: [
 			{
-				name: 'Looker',
-				url: 'https://mana.mozilla.org/wiki/pages/viewpage.action?spaceKey=DATA&title=Looker+Training+Resources',
-				description: `Mozilla's primary tool for analyzing data.`
-			},
-			{
 				name: 'Glean Aggregated Metrics Dashboard (GLAM)',
 				url: 'https://glam.telemetry.mozilla.org',
 				description: `An interactive dashboard that examines the distributions of values of specific individual telemetry metrics, over various dimensions.`
@@ -16,6 +11,11 @@ export const navigations = [
 				name: 'sql.telemetry.mozilla.org (STMO)',
 				url: 'https://sql.telemetry.mozilla.org',
 				description: `Mozilla instance of Redash that allows for SQL-based exploratory analysis and visualization / dashboard construction.`
+			},
+			{
+				name: 'Looker',
+				url: 'https://mana.mozilla.org/wiki/pages/viewpage.action?spaceKey=DATA&title=Looker+Training+Resources',
+				description: `Mozilla's primary tool for analyzing data.`
 			},
 			{
 				name: 'Nimbus',
