@@ -4,17 +4,17 @@ export const navigations = [
 		items: [
 			{
 				name: 'Looker',
-				url: 'Looker',
+				url: 'https://mana.mozilla.org/wiki/pages/viewpage.action?spaceKey=DATA&title=Looker+Training+Resources',
 				description: `Mozilla's primary tool for analyzing data.`
 			},
 			{
 				name: 'Glean Aggregated Metrics Dashboard (GLAM)',
-				url: '//glam.telemetry.mozilla.org',
+				url: 'https://glam.telemetry.mozilla.org',
 				description: `An interactive dashboard that examines the distributions of values of specific individual telemetry metrics, over various dimensions.`
 			},
 			{
 				name: 'sql.telemetry.mozilla.org (STMO)',
-				url: '//sql.telemetry.mozilla.org',
+				url: 'https://sql.telemetry.mozilla.org',
 				description: `Mozilla instance of Redash that allows for SQL-based exploratory analysis and visualization / dashboard construction.`
 			},
 			{
@@ -24,7 +24,7 @@ export const navigations = [
 			},
 			{
 				name: 'Glean Dictionary',
-				url: '//dictionary.telemetry.mozilla.org',
+				url: 'https://dictionary.telemetry.mozilla.org',
 				description: `A web-based tool that allows you to look up information on all the metrics defined in applications built using Glean, Mozilla's next-generation Telemetry SDK.`
 			},
 			{

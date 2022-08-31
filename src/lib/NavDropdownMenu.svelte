@@ -8,8 +8,9 @@
 	{#each items as item}
 		<a href={item.url} class="mzp-c-menu-item-head">
 			<Logo product={item.name} />
-			<a href={item.url} class="mzp-c-menu-item-title">{item.name}</a>
-			<p class="mzp-c-menu-item-desc">
+			<a href={item.url} class="menu-item-title">{item.name}</a>
+			<br />
+			<p class="menu-item-desc">
 				{#if item.description}
 					{item.description}
 				{/if}
@@ -22,23 +23,23 @@
 	@import './src/styles/protocol/css/components/_menu.scss';
 	@import './src/styles/protocol/css/components/_menu-item.scss';
 
-	.mzp-c-menu-item-title {
+	.menu-item-title {
 		font-family: 'Zilla Slab', Inter, X-LocaleSpecific, sans-serif;
 		color: #000000;
 		font-weight: bold;
+		font-size: 18px;
 		margin: 0 0 0.5em;
-		font-size: 8px;
 		line-height: 1.08;
 		text-decoration: none;
 	}
-	.mzp-c-menu-item-desc {
-		font-size: 2px;
+	.menu-item-desc {
+		font-size: 14px;
 		color: $color-marketing-gray-70;
 	}
 	.mzp-c-menu-item-head {
 		display: block;
 		text-decoration: none;
-		width: 45%;
+		width: 47%;
 		&:hover {
 			border-radius: $border-radius-md;
 			box-shadow: $box-shadow-sm;
