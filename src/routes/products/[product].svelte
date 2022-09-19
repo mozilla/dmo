@@ -9,7 +9,7 @@
 
 <section class="mzp-c-call-out">
 	<div class="mzp-l-content ">
-		<img class="mzp-c-card-image" src="/{product.app_id}.svg" alt="product logo" width="40px" />
+		<img class="mzp-c-card-image" src="/{product.app_id}.svg" alt="product logo" width="80px" />
 		<h3 class="mzp-c-call-out-title">{product.name}</h3>
 	</div>
 </section>
@@ -25,7 +25,7 @@
 						<img class="mzp-c-card-image" src="/dashboard.jpg" alt="" />
 					</div>
 					<div class="mzp-c-card-content">
-						<h5>{dashboard.name}</h5>
+						<h6>{dashboard.name}</h6>
 						<p>{dashboard.description}</p>
 					</div>
 				</a>
@@ -38,12 +38,13 @@
 	@import './src/styles/protocol/css/templates/_card-layout.scss';
 	@import './src/styles/protocol/css/components/_call-out.scss';
 
-	.mzp-c-card-block-link {
-		box-shadow: 0 0 0 4px $color-marketing-gray-20;
-	}
 	.mzp-c-card-content {
 		p {
 			color: $color-marketing-gray-60;
+			font-size: 14px;
 		}
+	}
+	.mzp-c-card-media-wrapper {
+		box-shadow: 0 0 0 2px $color-marketing-gray-20;
 	}
 </style>

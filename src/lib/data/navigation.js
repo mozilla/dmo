@@ -18,9 +18,9 @@ export const navigations = [
 				description: `Mozilla's primary tool for analyzing data.`
 			},
 			{
-				name: 'Nimbus',
-				url: 'https://experimenter.info/',
-				description: `Firefox's cross-platform experimentation tool.`
+				name: 'Experimentation',
+				url: 'https://experimenter.services.mozilla.com/)',
+				description: `Mozilla’s experiment management tool.`
 			},
 			{
 				name: 'Glean Dictionary',
@@ -57,10 +57,15 @@ export const navigations = [
 				url: 'https://mozilla.github.io/bigquery-etl/',
 				description: `Mozilla's framework for creating derived datasets and user-defined functions in BigQuery.`
 			},
-			{ name: 'Experimentation', url: 'https://experimenter.info/' },
 			{
 				name: 'Looker Training',
-				url: 'https://mana.mozilla.org/wiki/display/DATA/Looker+Training+Resources'
+				url: 'https://mana.mozilla.org/wiki/display/DATA/Looker+Training+Resources',
+				description: `Resources for learning how to use Looker`
+			},
+			{
+				name: 'Nimbus',
+				url: 'https://experimenter.info/',
+				description: `Documentation for Mozilla’s experimentation platform`
 			}
 		]
 	}

@@ -9,6 +9,7 @@
 			<div class="mzp-c-navigation-logo">
 				<a href="/">data@mozilla</a>
 			</div>
+
 			<nav class="mzp-c-menu mzp-is-basic">
 				<ul class="mzp-c-menu-category-list">
 					{#each navigations as navigation}
@@ -58,7 +59,9 @@
 		background-image: url('../styles/protocol/img/logos/mozilla/data-org.svg');
 		background-repeat: no-repeat;
 		display: block;
-		background-size: contain;
+		background-size: 100%;
+		width: 180px;
+		height: 50px;
 	}
 
 	.mzp-c-menu-panel {
