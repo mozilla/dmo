@@ -57,7 +57,7 @@
 	}
 
 	.mzp-c-navigation-logo a {
-		background-image: url('../styles/protocol/img/logos/mozilla/data-org.svg');
+		background-image: url('/data-org.svg');
 		background-repeat: no-repeat;
 		display: block;
 		background-size: 100%;
@@ -69,7 +69,7 @@
 		right: 0;
 		left: auto;
 		margin-top: 0px;
-		max-width: 750px;
+		max-width: 760px;
 		&-content > ul.li-container.li-container {
 			margin: 0;
 			right: 0;
