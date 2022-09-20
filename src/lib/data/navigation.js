@@ -14,7 +14,7 @@ export const navigations = [
 			},
 			{
 				name: 'Looker',
-				url: 'https://mana.mozilla.org/wiki/pages/viewpage.action?spaceKey=DATA&title=Looker+Training+Resources',
+				url: 'https://mozilla.cloud.looker.com',
 				description: `Mozilla's primary tool for analyzing data.`
 			},
 			{
