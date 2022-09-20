@@ -57,7 +57,7 @@
 	}
 
 	.mzp-c-navigation-logo a {
-		background-image: url('./data-org.svg');
+		background-image: url('/data-org.svg');
 		background-repeat: no-repeat;
 		display: block;
 		background-size: 100%;
