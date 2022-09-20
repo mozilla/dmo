@@ -12,8 +12,8 @@ export const kpis = [
 		url: 'https://mozilla.cloud.looker.com/dashboards/66'
 	},
 	{
-		name: 'KPI Artifacts',
-		url: 'https://mozilla.cloud.looker.com/folders/764'
+		name: 'Browser Reports',
+		url: 'https://mozilla.cloud.looker.com/folders/742'
 	}
 ];
 
@@ -119,6 +119,7 @@ export const products = [
 	{
 		name: 'Pocket',
 		app_id: 'pocket',
+		url: 'https://mozilla.cloud.looker.com/folders/498',
 		dashboards: [
 			{
 				name: 'Looker dashboards',
@@ -127,7 +128,7 @@ export const products = [
 					{
 						name: 'Looker folder',
 						description: 'Pocket Looker folder',
-						url: 'https://mozilla.cloud.looker.com/folders/375'
+						url: 'https://mozilla.cloud.looker.com/folders/498'
 					}
 				]
 			}
@@ -136,6 +137,7 @@ export const products = [
 	{
 		name: 'VPN',
 		app_id: 'vpn',
+		url: 'https://mozilla.cloud.looker.com/folders/375',
 		dashboards: [
 			{
 				name: 'Looker dashboards',
@@ -144,7 +146,7 @@ export const products = [
 					{
 						name: 'Looker folder',
 						description: 'VPN Looker folder',
-						url: 'https://mozilla.cloud.looker.com/folders/498'
+						url: 'https://mozilla.cloud.looker.com/folders/375'
 					}
 				]
 			}

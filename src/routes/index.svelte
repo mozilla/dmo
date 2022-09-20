@@ -1,5 +1,6 @@
 <script>
 	import { kpis, products } from '$lib/data/products';
+	import Product from './products/[product].svelte';
 </script>
 
 <svelte:head>
@@ -31,7 +32,10 @@
 		<div class="mzp-l-content mzp-l-card">
 			{#each products as product}
 				<section class="mzp-c-card">
-					<a class="mzp-c-card-block-link" href="/products/{product.app_id}">
+					<a
+						class="mzp-c-card-block-link"
+						href={product.url ? product.url : `/products/${product.app_id}`}
+					>
 						<div class="mzp-c-card-media-wrapper">
 							<img class="mzp-c-card-image" src="/{product.app_id}.svg" alt="product logo" />
 						</div>
@@ -71,7 +75,7 @@
 		grid-template-columns: 1fr 1fr;
 	}
 	.mzp-c-card {
-		width: 90%;
+		width: 75%;
 	}
 	.mzp-c-card-content {
 		text-align: center;
@@ -88,5 +92,6 @@
 
 	.split-title {
 		text-align: center;
+		font-size: 35px;
 	}
 </style>

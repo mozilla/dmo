@@ -36,23 +36,23 @@
 		font-size: 14px;
 		color: $color-marketing-gray-70;
 	}
-	.mzp-c-menu-item-head {
-		display: block;
-		text-decoration: none;
-		width: 47%;
-		&:hover {
-			border-radius: $border-radius-md;
-			box-shadow: $box-shadow-sm;
-			background-color: $color-marketing-gray-10;
-		}
-	}
+
 	.mzp-c-menu-item {
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: flex-end;
-		width: 200%;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		width: 700px;
 		&:hover {
 			box-shadow: none;
+		}
+		&-head {
+			display: block;
+			text-decoration: none;
+			flex: 1 1 300px;
+			&:hover {
+				border-radius: $border-radius-md;
+				background-color: $color-marketing-gray-10;
+			}
 		}
 	}
 </style>

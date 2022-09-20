@@ -9,11 +9,12 @@
 			<div class="mzp-c-navigation-logo">
 				<a href="/">data@mozilla</a>
 			</div>
+
 			<nav class="mzp-c-menu mzp-is-basic">
 				<ul class="mzp-c-menu-category-list">
 					{#each navigations as navigation}
 						<li class="mzp-c-menu-category mzp-has-drop-down mzp-js-expandable">
-							<a class="mzp-c-menu-title" href="/#" aria-haspopup="true">{navigation.name}</a>
+							<a class="mzp-c-menu-title" aria-haspopup="true">{navigation.name}</a>
 							{#if navigation.items && navigation.items.length}
 								<div class="mzp-c-menu-panel mzp-c-emphasis-box">
 									<button
@@ -24,7 +25,7 @@
 										Close menu
 									</button>
 									<div class="mzp-c-menu-panel-content">
-										<ul>
+										<ul class="li-container">
 											<li>
 												<NavDropdownMenu items={navigation.items} />
 											</li>
@@ -48,6 +49,7 @@
 	.mzp-c-navigation {
 		background-color: inherit;
 	}
+
 	nav {
 		display: flex;
 		flex-direction: row;
@@ -58,11 +60,23 @@
 		background-image: url('../styles/protocol/img/logos/mozilla/data-org.svg');
 		background-repeat: no-repeat;
 		display: block;
-		background-size: contain;
+		background-size: 100%;
+		width: 180px;
+		height: 50px;
 	}
 
 	.mzp-c-menu-panel {
-		margin-left: 42vw;
-		width: 56%;
+		right: 0;
+		left: auto;
+		margin-top: 0px;
+		max-width: 750px;
+		&-content > ul.li-container.li-container {
+			margin: 0;
+			right: 0;
+			width: 20px;
+			::after {
+				margin: 0;
+			}
+		}
 	}
 </style>

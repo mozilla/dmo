@@ -7,7 +7,6 @@
 	import stmo from './logos/stmo.svelte';
 	import glam from './logos/glam.svelte';
 	import gud from './logos/gud.svelte';
-	import experimenter from './logos/experimenter.svelte';
 	import nimbus from './logos/nimbus.svelte';
 	import probes from './logos/probes.svelte';
 	import gleandictionary from './logos/gleandictionary.svelte';
@@ -22,8 +21,7 @@
 		Looker: looker,
 		'sql.telemetry.mozilla.org (STMO)': stmo,
 		'Glean Aggregated Metrics Dashboard (GLAM)': glam,
-		Nimbus: nimbus,
-		Experimenter: experimenter,
+		Experimentation: nimbus,
 		'Probe Dictionary': probes,
 		'Growth and Usage Dashboard (GUD)': gud,
 		'Glean Dictionary': gleandictionary,
