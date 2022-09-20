@@ -36,16 +36,6 @@
 		font-size: 14px;
 		color: $color-marketing-gray-70;
 	}
-	// .mzp-c-menu-item-head {
-	// 	display: block;
-	// 	text-decoration: none;
-	// 	width: 47%;
-	// 	&:hover {
-	// 		border-radius: $border-radius-md;
-	// 		box-shadow: $box-shadow-sm;
-	// 		background-color: $color-marketing-gray-10;
-	// 	}
-	// }
 
 	.mzp-c-menu-item {
 		display: flex;
