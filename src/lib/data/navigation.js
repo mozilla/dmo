@@ -38,7 +38,7 @@ export const navigations = [
 		name: 'Docs',
 		items: [
 			{
-				name: 'DTMO',
+				name: 'docs.telemetry.mozilla.org',
 				url: 'https://docs.telemetry.mozilla.org/',
 				description: 'Central source for all things Data@Mozilla'
 			},
@@ -55,7 +55,7 @@ export const navigations = [
 			{
 				name: 'BigQuery-ETL',
 				url: 'https://mozilla.github.io/bigquery-etl/',
-				description: `Mozilla's framework for creating derived datasets and user-defined functions in BigQuery.`
+				description: `Mozilla's framework for creating derived datasets and user-defined functions in BigQuery`
 			},
 			{
 				name: 'Looker Training',
