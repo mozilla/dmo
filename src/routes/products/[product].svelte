@@ -14,29 +14,18 @@
 	</div>
 </section>
 
-{#each product['dashboards'] as section}
-	<div class="mzp-l-content mzp-l-card-quarter">
-		<h3>{section.name}</h3>
-		<p>{section.description}</p>
-		{#each section.links as dashboard}
-			<section class="mzp-c-card">
-				<a class="mzp-c-card-block-link" href={dashboard.url}>
-					<div class="mzp-c-card-media-wrapper">
-						<img class="mzp-c-card-image" src="/dashboard.jpg" alt="" />
-					</div>
-					<div class="mzp-c-card-content">
-						<h6>{dashboard.name}</h6>
-						<p>{dashboard.description}</p>
-					</div>
-				</a>
-			</section>
-		{/each}
-	</div>{/each}
+<div class="mzp-l-content grid">
+	{#each product['dashboards'] as dashboard}
+		<a class="dashboard mzp-c-emphasis-box">
+			<h4>{dashboard.name}</h4>
+			<p>{dashboard.description}</p>
+		</a>
+	{/each}
+</div>
 
 <style lang="scss">
-	@import './src/styles/protocol/css/components/_card.scss';
-	@import './src/styles/protocol/css/templates/_card-layout.scss';
 	@import './src/styles/protocol/css/components/_call-out.scss';
+	@import './src/styles/protocol/css/components/_emphasis-box.scss';
 
 	.mzp-c-card-content {
 		p {
@@ -46,5 +35,18 @@
 	}
 	.mzp-c-card-media-wrapper {
 		box-shadow: 0 0 0 2px $color-marketing-gray-20;
+	}
+	.dashboard {
+		display: block;
+		cursor: pointer;
+		&:hover {
+			h4 {
+				color: $color-blue-50;
+			}
+		}
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 </style>
