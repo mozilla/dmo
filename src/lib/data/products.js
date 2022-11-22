@@ -30,44 +30,44 @@ export const products = [
 			},
 			{
 				name: 'Default Browser Setting By Platform',
-				url: 'https://sql.telemetry.mozilla.org/dashboard/default-browser-setting-by-platform',
-				description: 'Default browser setting in Desktop, iOS, Android'
+				description: 'Default browser setting in Desktop, iOS, Android',
+				url: 'https://sql.telemetry.mozilla.org/dashboard/default-browser-setting-by-platform'
 			},
 			{
 				name: 'New Profiles and Retention per Country',
-				url: 'https://sql.telemetry.mozilla.org/queries/69256/source#174699',
 				description:
-					"New profiles and retention per country ('US', 'GB', 'CA', 'FR', 'DE','CN','IN','BR')"
+					"New profiles and retention per country ('US', 'GB', 'CA', 'FR', 'DE','CN','IN','BR')",
+				url: 'https://sql.telemetry.mozilla.org/queries/69256/source#174699'
 			},
 			{
 				name: 'New Profile Activation Timeseries 28 Day Basis',
-				url: 'https://sql.telemetry.mozilla.org/queries/74181/source#187560',
-				description: 'The number of users meeting criteria per 28D period, etc.'
+				description: 'The number of users meeting criteria per 28D period, etc.',
+				url: 'https://sql.telemetry.mozilla.org/queries/74181/source#187560'
 			},
 			{
 				name: 'Regular VS Core Users per Segments',
-				url: 'https://sql.telemetry.mozilla.org/dashboard/regular-vs-core-users-per-segments',
-				description: 'Cohorts of users by days of engagement. Core = 21+ days out of 28.'
+				description: 'Cohorts of users by days of engagement. Core = 21+ days out of 28.',
+				url: 'https://sql.telemetry.mozilla.org/dashboard/regular-vs-core-users-per-segments'
 			},
 			{
 				name: 'Regular / Core Users',
-				url: 'https://sql.telemetry.mozilla.org/dashboard/regular-core-users',
-				description: 'An Alternative Metric to Consider: Weekly (or Monthly) Usage Days'
+				description: 'An Alternative Metric to Consider: Weekly (or Monthly) Usage Days',
+				url: 'https://sql.telemetry.mozilla.org/dashboard/regular-core-users'
 			},
 			{
 				name: 'Default Agent Dashboard',
-				url: 'https://sql.telemetry.mozilla.org/dashboard/default-agent-dashboard',
-				description: 'Users moving from FF to Edgium VS users moving from Edgium to FF on Win10'
+				description: 'Users moving from FF to Edgium VS users moving from Edgium to FF on Win10',
+				url: 'https://sql.telemetry.mozilla.org/dashboard/default-agent-dashboard'
 			},
 			{
-				name: 'Daily users - shown vs recovered',
-				url: 'https://sql.telemetry.mozilla.org/queries/76606/source#191008',
-				description: 'WDBA notifications - % based'
+				name: 'Daily Users - Shown vs Recovered',
+				description: 'WDBA notifications - % based',
+				url: 'https://sql.telemetry.mozilla.org/queries/76606/source#191008'
 			},
 			{
 				name: 'SAP Usage Share - Weekly',
-				url: 'https://sql.telemetry.mozilla.org/queries/56499#147865',
-				description: 'Recorded in release channel'
+				description: 'Recorded in release channel',
+				url: 'https://sql.telemetry.mozilla.org/queries/56499#147865'
 			}
 		]
 	},
@@ -100,7 +100,7 @@ export const products = [
 			{
 				name: 'Looker dashboards',
 				description: 'Looker is the primary tool for analyzing data at Mozilla.',
-				links: [
+				url: [
 					{
 						name: 'Looker folder',
 						description: 'Pocket Looker folder',

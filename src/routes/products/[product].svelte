@@ -16,7 +16,7 @@
 
 <div class="mzp-l-content grid">
 	{#each product['dashboards'] as dashboard}
-		<a class="dashboard mzp-c-emphasis-box">
+		<a class="dashboard mzp-c-emphasis-box" href={dashboard.url}>
 			<h4>{dashboard.name}</h4>
 			<p>{dashboard.description}</p>
 		</a>
@@ -39,10 +39,13 @@
 	.dashboard {
 		display: block;
 		cursor: pointer;
+		text-decoration: none;
+		color: $color-dark-gray-60;
 		&:hover {
 			h4 {
 				color: $color-blue-50;
 			}
+			box-shadow: 0 8px 12px 1px #1d11332a, 0 3px 16px 2px #09204d1f, 0 5px 10px -3px #1d11331f;
 		}
 	}
 	.grid {
