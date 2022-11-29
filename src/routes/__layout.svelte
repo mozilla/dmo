@@ -1,12 +1,39 @@
 <script>
 	import Footer from '$lib/Footer.svelte';
 	import Navigation from '$lib/Navigation.svelte';
+
+	import { onMount } from 'svelte';
+	import { auth } from '../authService';
+	import { isAuthenticated, user, tasks } from '../store';
+
+	let auth0Client;
+	let newTask;
+
+	onMount(async () => {
+		auth0Client = await auth.createClient();
+
+		isAuthenticated.set(await auth0Client.isAuthenticated());
+		user.set(await auth0Client.getUser());
+	});
+
+	function login() {
+		auth.loginWithPopup(auth0Client);
+	}
+
+	function logout() {
+		auth.logout(auth0Client);
+	}
 </script>
 
 <main class="app">
-	<Navigation />
-	<slot />
-	<Footer />
+	<a class="btn btn-primary btn-lg mr-auto ml-auto" href="/#" role="button" on:click={login}
+		>Test log In: if authenticated sucessfully, you should be able to see the content of this page.</a
+	>
+	{#if $isAuthenticated}
+		<Navigation />
+		<slot />
+		<Footer />
+	{/if}
 </main>
 
 <style lang="scss">
