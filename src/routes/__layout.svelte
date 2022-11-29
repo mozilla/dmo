@@ -26,9 +26,11 @@
 </script>
 
 <main class="app">
-	<a class="btn btn-primary btn-lg mr-auto ml-auto" href="/#" role="button" on:click={login}
-		>Test log In: if authenticated sucessfully, you should be able to see the content of this page.</a
-	>
+	{#if !$isAuthenticated}
+		<a class="btn btn-primary btn-lg mr-auto ml-auto" href="/#" role="button" on:click={login}
+			>To see the content of this page please click here to authenticate.</a
+		>
+	{/if}
 	{#if $isAuthenticated}
 		<Navigation />
 		<slot />
