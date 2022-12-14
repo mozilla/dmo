@@ -1,6 +1,6 @@
 # dmo
 
-[data-mozilla.netlify.app](https://dmo-dev.netlify.app)
+[data-mozilla.netlify.app](https://data-mozilla.netlify.app)
 
 ## Developing
 
