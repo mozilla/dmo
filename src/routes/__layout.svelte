@@ -23,14 +23,13 @@
 	function logout() {
 		auth.logout(auth0Client);
 	}
+
+	$: if (!$isAuthenticated && auth0Client) {
+		login();
+	}
 </script>
 
 <main class="app">
-	{#if !$isAuthenticated}
-		<a class="btn btn-primary btn-lg mr-auto ml-auto" href="/#" role="button" on:click={login}
-			>Authentication test: to see the content of this page please click here to authenticate.</a
-		>
-	{/if}
 	{#if $isAuthenticated}
 		<Navigation />
 		<slot />
