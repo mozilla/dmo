@@ -17,7 +17,7 @@
 	});
 
 	function login() {
-		auth.loginWithPopup(auth0Client);
+		auth.loginWithRedirect(auth0Client);
 	}
 
 	function logout() {
