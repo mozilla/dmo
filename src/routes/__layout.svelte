@@ -1,12 +1,40 @@
 <script>
 	import Footer from '$lib/Footer.svelte';
 	import Navigation from '$lib/Navigation.svelte';
+
+	import { onMount } from 'svelte';
+	import { auth } from '../authService';
+	import { isAuthenticated, user } from '../store';
+
+	let auth0Client;
+	let newTask;
+
+	onMount(async () => {
+		auth0Client = await auth.createClient();
+
+		isAuthenticated.set(await auth0Client.isAuthenticated());
+		user.set(await auth0Client.getUser());
+	});
+
+	function login() {
+		auth.loginWithRedirect(auth0Client);
+	}
+
+	function logout() {
+		auth.logout(auth0Client);
+	}
+
+	$: if (!$isAuthenticated && auth0Client) {
+		login();
+	}
 </script>
 
 <main class="app">
-	<Navigation />
-	<slot />
-	<Footer />
+	{#if $isAuthenticated}
+		<Navigation />
+		<slot />
+		<Footer />
+	{/if}
 </main>
 
 <style lang="scss">

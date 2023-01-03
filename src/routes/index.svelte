@@ -6,7 +6,6 @@
 <svelte:head>
 	<title>Data@Mozilla</title>
 </svelte:head>
-
 <div class="mzp-l-content mzp-l-columns mzp-t-columns-two ">
 	<div>
 		<h3 class="split-title mzp-has-zap-1"><strong>Company</strong></h3>
