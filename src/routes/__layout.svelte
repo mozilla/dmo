@@ -4,7 +4,7 @@
 
 	import { onMount } from 'svelte';
 	import { auth } from '../authService';
-	import { isAuthenticated, user, tasks } from '../store';
+	import { isAuthenticated, user } from '../store';
 
 	let auth0Client;
 	let newTask;
